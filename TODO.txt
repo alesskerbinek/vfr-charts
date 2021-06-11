@@ -1,0 +1,30 @@
+TODO Next:
+- OpenStreetMap attribution - https://wiki.osmfoundation.org/wiki/Licence/Licence_and_Legal_FAQ#How_should_I_attribute_you.3F
+- Variation
+- ARP
+- LJSO Approach
+- Verzej, legend - spa
+- Cerkvenjak, possible RC scale model activities???
+
+In progress:
+- Imeno - wait initial response
+- Cerkvenjak Čagona - wait initial response
+
+Wish:
+- Zagorje Kisovec - already has
+- Mostje
+- Dobova - already has
+- Kočevje Novi Lazi - already has
+- Podpeč - already has
+
+Ideas:
+- View airfield data
+- Download chart
+- Download airfield manual
+- Comment
+- Statistics - most  popular airfield (by website visits, chart downloads), most popular months, visitors from which country etc.
+- Radar, GAFOR - image from ARSO url. - to je koristno za OPT (+ dnevna napoved).
+- Metar & Taf - https://www.ogimet.com/metars.phtml.en
+- Notam ???
+- Sunset & sunrise
+- Distance from my location - https://mylocation.org/
