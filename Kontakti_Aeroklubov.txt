@@ -1,30 +1,30 @@
-APT   		Contact							            Latest rev.		2021	
-LJAJ		ak-josip.krizaj@siol.net		      25-03-2021		SENT	
-LJBL		info@alc-lesce.si				          25-03-2021		SENT	
-LJBO		info@bovec-airfield.si			      25-03-2021		SENT	
-LJCL		aeroklub_celje@siol.net			      25-03-2021		SENT	
-LJDI		Facebook						              25-03-2021		SENT	
-LJMS		upravnik@aeroklub-ms.si			      25-03-2021		SENT	
-LJNM		info@aknm.si					            22-04-2021		SENT	
-LJPO		aeroklub.postojna@gmail.com		    25-03-2021		SENT	
-LJPT		Facebook						              25-03-2021		SENT	
-LJSG		Facebook						              25-03-2021		SENT	
-LJSK		pico1@siol.com					          25-03-2021		SENT	
-LJSO		zvonimir.mavri@gmail.com		      25-03-2021		SENT	
-                                            
-LJCE		Jgz.ljce@gmail.com				                      SENT
-LJPZ		info@akolcp.com					                        SENT	
-LJPZ 2		predsednik@akpz.si				                    SENT
-                                            
-Kamnik		letalski.klub.kamnik@gmail.com	22-04-2021		SENT	
-Šentvid		info@lk-sentvid.com				      20-05-2021		SENT	
-Zagorje		Online form						          ALREADY HAS		SENT	
-Metlika		aeroklub.bk@gmail.com			      20-05-2021		SENT	
-Imeno		info@aeroklub-imeno.si			      IN PROGRESS		SENT	
-Ljutomer	tomaz@3lan.si					          20-05-2021		SENT	
-Cerkvenjak	vito.kraner@gmail.com		      IN PROGRESS		SENT	
-                                            
-Dobova		info@vzletisce-mihalovec.si		ALREADY HAS		  TO SEND 
-Lendava										              NO CONTACT :(	  ???		
-Kočevje		lk.kocevje@gmail.com			    ALREADY HAS		  TO SEND	
-Podpeč		acmg@siol.net					        ALREADY HAS		  TO SEND	
+APT         Contact                         Latest rev.     2021    
+LJAJ        ak-josip.krizaj@siol.net        25-03-2021      SENT    
+LJBL        info@alc-lesce.si               25-03-2021      SENT    
+LJBO        info@bovec-airfield.si          25-03-2021      SENT    
+LJCL        aeroklub_celje@siol.net         25-03-2021      SENT    
+LJDI        Facebook                        25-03-2021      SENT    
+LJMS        upravnik@aeroklub-ms.si         25-03-2021      SENT    
+LJNM        info@aknm.si                    22-04-2021      SENT    
+LJPO        aeroklub.postojna@gmail.com     25-03-2021      SENT    
+LJPT        Facebook                        25-03-2021      SENT    
+LJSG        Facebook                        25-03-2021      SENT    
+LJSK        pico1@siol.com                  25-03-2021      SENT    
+LJSO        zvonimir.mavri@gmail.com        25-03-2021      SENT    
+
+LJCE        Jgz.ljce@gmail.com              SENT
+LJPZ        info@akolcp.com	                SENT
+LJPZ 2      predsednik@akpz.si              SENT
+
+Kamnik      letalski.klub.kamnik@gmail.com  22-04-2021      SENT    
+Šentvid     info@lk-sentvid.com             20-05-2021      SENT    
+Zagorje     Online form                     ALREADY HAS     SENT    
+Metlika     aeroklub.bk@gmail.com           20-05-2021      SENT    
+Imeno       info@aeroklub-imeno.si          IN PROGRESS     SENT    
+Ljutomer    tomaz@3lan.si                   20-05-2021      SENT    
+Cerkvenjak  vito.kraner@gmail.com           IN PROGRESS     SENT    
+
+Dobova      info@vzletisce-mihalovec.si     ALREADY HAS     TO SEND 
+Lendava                                     NO CONTACT :(   ???     
+Kočevje     lk.kocevje@gmail.com            ALREADY HAS     TO SEND 
+Podpeč      acmg@siol.net                   ALREADY HAS     TO SEND 
