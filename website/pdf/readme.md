@@ -1,0 +1,20 @@
+This folder contains the latest pdf files for each airport:
+* _CER.pdf
+* _KAM.pdf
+* _KOC.pdf
+* _MET.pdf
+* _POD.pdf
+* _SEN.pdf
+* _VER.pdf
+* LJAJ.pdf
+* LJBL.pdf
+* LJBO.pdf
+* LJCL.pdf
+* LJDI.pdf
+* LJMS.pdf
+* LJNM.pdf
+* LJPO.pdf
+* LJPT.pdf
+* LJSK.pdf
+* LJSG.pdf
+* LJSO.pdf
