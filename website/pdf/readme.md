@@ -1,4 +1,4 @@
-This folder contains the latest pdf files for each airport:
+ON the webserver this folder contains the latest pdf files for each airport:
 * _CER.pdf
 * _KAM.pdf
 * _KOC.pdf
