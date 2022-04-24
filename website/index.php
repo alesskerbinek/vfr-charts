@@ -24,7 +24,7 @@
 		if($checkOK) {
 			
 			//SEND MAIL
-			include_once('../futurum.si/phpMailer/class.phpmailer.php');
+			include_once('../phpMailer/class.phpmailer.php');
 			$mail    = new PHPMailer();
 			$subject ='VFR-Charts Support Message';
 			$body  = $author."<br />".$email."<br />".$content;
@@ -280,14 +280,14 @@ function initMap() {
     </script>
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7PCZ5KTEJC"></script>
+	<!--script async src="https://www.googletagmanager.com/gtag/js?id=G-7PCZ5KTEJC"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
 
 	  gtag('config', 'G-7PCZ5KTEJC');
-	</script>
+	</script-->
 
   </head>
   <body>
@@ -533,5 +533,28 @@ function initMap() {
       src="https://maps.googleapis.com/maps/api/js?key= !!! ENTER KEY HERE !!! &callback=initMap&libraries=&v=weekly"
       async
     ></script>
+	
+	<!-- Cookie Consent by https://www.PrivacyPolicies.com -->
+	<script type="text/javascript" src="//www.privacypolicies.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+	<script type="text/javascript" charset="UTF-8">
+	document.addEventListener('DOMContentLoaded', function () {
+	cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"vfr-charts.ga"});
+	});
+	</script>
+
+	<!-- Google Analytics -->
+	<script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-7PCZ5KTEJC"></script>
+		<script type="text/plain" cookie-consent="tracking">
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-7PCZ5KTEJC');
+		</script>
+	<!-- end of Google Analytics-->
+
+	<noscript>Cookie Consent by <a href="https://www.privacypolicies.com/" rel="nofollow noopener">Privacy Policies Generator website</a></noscript>
+	<!-- End Cookie Consent -->
+
   </body>
 </html>
