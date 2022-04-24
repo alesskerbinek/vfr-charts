@@ -24,7 +24,7 @@
 		if($checkOK) {
 			
 			//SEND MAIL
-			include_once('../phpMailer/class.phpmailer.php');
+			include_once('../futurum.si/phpMailer/class.phpmailer.php');
 			$mail    = new PHPMailer();
 			$subject ='VFR-Charts Support Message';
 			$body  = $author."<br />".$email."<br />".$content;
@@ -56,6 +56,13 @@
     <title>VFR Charts</title>
 	
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 	
 	<meta name="description" content="VFR Approach and Ground Movement Charts for Public Airports and UL sites in Slovenia">
 	<meta name="keywords" content="VFR, chart, map, layout, approach, ground movement, Slovenia, Europe, airport, aerodrome, airfield, airstrip, UL site, aviation, aircraft, airplane, flight, general aviation, pilot, AIRAC, unofficial, AIP, copyleft, visual flight rules, download, pdf, jpg, jpeg, reporting points, contact, fuel, customs, meteo, website, email, runway, direction, TORA, TODA, ASDA, LDA, dimension, frequency, civil, altitude, elevation, departure, arrival, tower, radar, information, manual, traffic pattern, glider, upwind, crosswind, downwind, base leg, final, left, right, turn, instructions, valid, ICAO, IATA, callsign, location, color, ultra light, ultralight, light-sport, LSA, microlight, sport, LJMB, LJLJ, LJCE, LJPZ, LJAJ, LJBL, LJBO, LJCL, LJDI, LJMS, LJNM, LJPO, LJPT, LJSK, LJSG, LJSO, Ajdovscina, Bovec, Lesce, Bled, Celje, Divača, Novo Mesto, Murska Sobota, Ptuj, Postojna, Slovenj Gradec, Slovenske Konjice, Sostanje, Velenje, Ljubljana, maribor, Cerklje ob Krki, Portoroz, Sentvid, Kamnik, Duplica, Verzej, Cerkevenjak, Cagona, Mostje, Lendava, Dobova, Mihalovec, Metlika, Prilozje, Zagorje, Kisovec, Kocevje, Novi Lazi, vzletisce, letalisce, zemljevid, karta, priletne karte">
@@ -142,6 +149,9 @@ function initMap() {
 			url: "APTs/G050.png", size: new google.maps.Size(58, 58), origin: new google.maps.Point(0, 0), anchor: new google.maps.Point(29, 29),
 		  };
 		  
+		  const imageU010 = {
+			url: "APTs/U010.png", size: new google.maps.Size(58, 58), origin: new google.maps.Point(0, 0), anchor: new google.maps.Point(29, 29),
+		  };
 		  const imageU110 = {
 			url: "APTs/U110.png", size: new google.maps.Size(58, 58), origin: new google.maps.Point(0, 0), anchor: new google.maps.Point(29, 29),
 		  };
@@ -151,6 +161,13 @@ function initMap() {
 		  const imageU040 = {
 			url: "APTs/U040.png", size: new google.maps.Size(58, 58), origin: new google.maps.Point(0, 0), anchor: new google.maps.Point(29, 29),
 		  };
+		  const imageU160 = {
+			url: "APTs/U160.png", size: new google.maps.Size(58, 58), origin: new google.maps.Point(0, 0), anchor: new google.maps.Point(29, 29),
+		  };
+		  const imageU150 = {
+			url: "APTs/U150.png", size: new google.maps.Size(58, 58), origin: new google.maps.Point(0, 0), anchor: new google.maps.Point(29, 29),
+		  };
+		  
   
         // The location of Uluru
         const ljubljana = { lat: 46.224674, lng: 14.455743 };
@@ -175,7 +192,10 @@ function initMap() {
 		const sentvid = { lat: 45.943940, lng: 14.850698 };
 		const metlika = { lat: 45.588863, lng: 15.259699 };
 		const verzej = { lat: 46.573229, lng: 16.191969 }; 
-		
+		const cerkvenjak = { lat: 46.547945, lng: 15.915152 }; 
+		const podcetrtek = { lat: 46.126981, lng: 15.603903 }; 
+		const kocevje = { lat: 45.570311, lng: 14.857974 }; 
+		 
 		const geoss = { lat: 46.120236, lng: 14.815425 };
 			
         // The map, centered at Uluru
@@ -205,6 +225,9 @@ function initMap() {
 		const marker_MET = new google.maps.Marker({ position: metlika, map: map, icon: imageU040, });
 		const marker_SEN = new google.maps.Marker({ position: sentvid, map: map, icon: imageU140, });
 		const marker_VER = new google.maps.Marker({ position: verzej, map: map, icon: imageU040, });
+		const marker_CER = new google.maps.Marker({ position: cerkvenjak, map: map, icon: imageU160, });
+		const marker_POD = new google.maps.Marker({ position: podcetrtek, map: map, icon: imageU010, });
+		const marker_KOC = new google.maps.Marker({ position: kocevje, map: map, icon: imageU150, });
 				
 		const infoLJLJ = new google.maps.InfoWindow({content: '<div id="content"><h2 id="firstHeading" class="firstHeading">LJLJ - Ljubljana</h2><p>International Civil Aiport</p></div>'});
 		const infoLJMB = new google.maps.InfoWindow({content: '<div id="content"><h2 id="firstHeading" class="firstHeading">LJMB - Maribor</h2><p>International Civil Aiport</p></div>'});
@@ -226,6 +249,9 @@ function initMap() {
 		const info_MET = new google.maps.InfoWindow({content: '<div id="content"><h2 id="firstHeading" class="firstHeading">Metlika</h2></div>'});
 		const info_SEN = new google.maps.InfoWindow({content: '<div id="content"><h2 id="firstHeading" class="firstHeading">Šentvid pri Stični</h2></div>'});
 		const info_VER = new google.maps.InfoWindow({content: '<div id="content"><h2 id="firstHeading" class="firstHeading">Veržej</h2></div>'});
+		const info_CER = new google.maps.InfoWindow({content: '<div id="content"><h2 id="firstHeading" class="firstHeading">Cerkvenjak</h2></div>'});
+		const info_POD = new google.maps.InfoWindow({content: '<div id="content"><h2 id="firstHeading" class="firstHeading">Podčetrtek</h2></div>'});
+		const info_KOC = new google.maps.InfoWindow({content: '<div id="content"><h2 id="firstHeading" class="firstHeading">Kočevje</h2></div>'});
 		
 		markerLJLJ.addListener("click", () => { infoLJLJ.open(map, markerLJLJ); });
 		markerLJMB.addListener("click", () => { infoLJMB.open(map, markerLJMB); });
@@ -247,6 +273,9 @@ function initMap() {
 		marker_MET.addListener("click", () => { info_MET.open(map, marker_MET); });
 		marker_SEN.addListener("click", () => { info_SEN.open(map, marker_SEN); });
 		marker_VER.addListener("click", () => { info_VER.open(map, marker_VER); });
+		marker_CER.addListener("click", () => { info_CER.open(map, marker_CER); });
+		marker_POD.addListener("click", () => { info_POD.open(map, marker_POD); });
+		marker_KOC.addListener("click", () => { info_KOC.open(map, marker_KOC); });
       }
     </script>
 	
@@ -395,27 +424,53 @@ function initMap() {
 				<td></td>
 			</tr>
 			<tr>
+				<td>Cerkvenjak</td>
 				<td>Kamnik</td>
+				<td>Kočevje</td>
 				<td>Metlika</td>
-				<td>Šentvid</td>
-				<td>Veržej</td>
 			</tr>
 			<tr>
+				<td><a href="image/_CER-AC.jpg"><img src="image/thumbnail/_CER-AC.jpg" alt="AC" class="chart_img" /></a>&nbsp;<a href="image/_CER-GMC.jpg"><img src="image/thumbnail/_CER-GMC.jpg" alt="GMC" class="chart_img" /></a></td>
 				<td><a href="image/_KAM-AC.jpg"><img src="image/thumbnail/_KAM-AC.jpg" alt="AC" class="chart_img" /></a>&nbsp;<a href="image/_KAM-GMC.jpg"><img src="image/thumbnail/_KAM-GMC.jpg" alt="GMC" class="chart_img" /></a></td>
-				<td><a href="image/_MET-AC.jpg"><img src="image/thumbnail/_MET-AC.jpg" alt="AC" class="chart_img" /></a>&nbsp;<a href="image/_MET-GMC.jpg"><img src="image/thumbnail/_MET-GMC.jpg" alt="GMC" class="chart_img" /></a></td>
-				<td><a href="image/_SEN-AC.jpg"><img src="image/thumbnail/_SEN-AC.jpg" alt="AC" class="chart_img" /></a>&nbsp;<a href="image/_SEN-GMC.jpg"><img src="image/thumbnail/_SEN-GMC.jpg" alt="GMC" class="chart_img" /></a></td>
-				<td><a href="image/_VER-AC.jpg"><img src="image/thumbnail/_VER-AC.jpg" alt="AC" class="chart_img" /></a>&nbsp;<a href="image/_VER-GMC.jpg"><img src="image/thumbnail/_VER-GMC.jpg" alt="GMC" class="chart_img" /></a></td>
+				<td><a href="image/_KOC-AC.jpg"><img src="image/thumbnail/_KOC-AC.jpg" alt="AC" class="chart_img" /></a>&nbsp;<a href="image/_KOC-GMC.jpg"><img src="image/thumbnail/_KOC-GMC.jpg" alt="GMC" class="chart_img" /></a></td>
+				<td><a href="image/_MET-AC.jpg"><img src="image/thumbnail/_MET-AC.jpg" alt="AC" class="chart_img" /></a>&nbsp;<a href="image/_MET-GMC.jpg"><img src="image/thumbnail/_MET-GMC.jpg" alt="GMC" class="chart_img" /></a></td>				
 			</tr>
 			<tr>
+				<td><a href="pdf/_CER.pdf">Download PDF</a></td>
 				<td><a href="pdf/_KAM.pdf">Download PDF</a></td>
+				<td><a href="pdf/_KOC.pdf">Download PDF</a></td>
 				<td><a href="pdf/_MET.pdf">Download PDF</a></td>
-				<td><a href="pdf/_SEN.pdf">Download PDF</a></td>
-				<td><a href="pdf/_VER.pdf">Download PDF</a></td>
 			</tr>		
 		</table>
 		<br />
 		<br />
 		<br />
+		<table class="tbtApts">
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Podčetrtek</td>
+				<td>Šentvid</td>
+				<td>Veržej</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><a href="image/_POD-AC.jpg"><img src="image/thumbnail/_POD-AC.jpg" alt="AC" class="chart_img" /></a>&nbsp;<a href="image/_POD-GMC.jpg"><img src="image/thumbnail/_POD-GMC.jpg" alt="GMC" class="chart_img" /></a></td>
+				<td><a href="image/_SEN-AC.jpg"><img src="image/thumbnail/_SEN-AC.jpg" alt="AC" class="chart_img" /></a>&nbsp;<a href="image/_SEN-GMC.jpg"><img src="image/thumbnail/_SEN-GMC.jpg" alt="GMC" class="chart_img" /></a></td>
+				<td><a href="image/_VER-AC.jpg"><img src="image/thumbnail/_VER-AC.jpg" alt="AC" class="chart_img" /></a>&nbsp;<a href="image/_VER-GMC.jpg"><img src="image/thumbnail/_VER-GMC.jpg" alt="GMC" class="chart_img" /></a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><a href="pdf/_POD.pdf">Download PDF</a></td>
+				<td><a href="pdf/_SEN.pdf">Download PDF</a></td>
+				<td><a href="pdf/_VER.pdf">Download PDF</a></td>
+				<td><!--a href="pdf/_VER.pdf">Download PDF</a--></td>
+			</tr>		
+		</table>
 		
 	</div>
 		
